@@ -1,0 +1,6 @@
+$color-principal: rgb(252, 252, 1);
+$color-secundario: rgb(1, 45, 241);
+
+.capa-transparente {
+    background: mix($color-principal, $color-secundario);
+}
