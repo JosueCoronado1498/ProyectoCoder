@@ -114,9 +114,9 @@ header div nav ul li a:hover {
   background-color: #181111;
   color: white;
   font-size: 20px;
-  padding: 1rem;
-  margin-inline: 600px;
-  text-decoration: none;
+  padding: 1.5rem;
+  margin-inline: auto;
+  text-decoration: underline;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -166,21 +166,24 @@ body {
 }
 
 .contenido-sobre-video {
+  justify-content: center;
+  align-items: center;
   z-index: 2;
 }
-
 .contenido-sobre-video h1 {
-  font-size: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 40px;
   color: white;
   text-decoration: underline;
   display: flex;
   justify-content: center;
 }
 
-.contenido-sobre-video p {
+.parrafo-video {
   padding: 2rem 25rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 20px;
-  font-size: 20px;
+  font-size: 25px;
   color: white;
   display: flex;
   text-align: center;
@@ -322,7 +325,7 @@ body {
   visibility: visible;
 }
 .grid-item:hover > .capa h1 {
-  margin-top: 70px;
+  margin-top: 250px;
   margin-bottom: 15px;
 }
 .grid-item:hover > img {
@@ -349,6 +352,7 @@ body {
 
 .grid-item .capa h1 {
   color: white;
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 120px;
   transition: all 500ms ease-out;
@@ -366,6 +370,69 @@ body {
 }
 
 /* Fin seccion principal */
+/* Inicio Formulario */
+.formulario {
+  width: 650px;
+  background: #1d2b44;
+  box-sizing: border-box;
+  padding: 35px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+.formulario h2 {
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.formulario p {
+  height: 25px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 12px;
+}
+.formulario p a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.formulario p a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.boton-suscribirse {
+  width: 100%;
+  background: black;
+  cursor: pointer;
+  border: none;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+.boton-suscribirse:hover {
+  background: yellowgreen;
+}
+
+.controls {
+  width: 100%;
+  background: #1d2b44;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  border: 1px solid #0f3292;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+/* Fin formulario */
+/* Inicio Footer */
 footer {
   position: absolute;
   background-color: #2e2a2a;
@@ -384,10 +451,10 @@ footer {
   text-align: center;
 }
 .contenido-footer h3 {
-  font-size: 1.5rem;
+  font-size: 25px;
   font-weight: 400;
   text-transform: capitalize;
-  line-height: 2.5rem;
+  line-height: 40px;
 }
 .contenido-footer h3 p {
   max-width: 500px;
@@ -411,7 +478,7 @@ footer {
   color: whitesmoke;
 }
 .redes-sociales li a i {
-  font-size: 1rem;
+  font-size: 1.3rem;
   transition: color 0.4s ease;
 }
 .redes-sociales li a i:hover {
@@ -421,7 +488,7 @@ footer {
 .footer-fondo {
   background: black;
   width: 100vw;
-  padding: 20px 0;
+  padding: 10px 0;
   text-align: center;
 }
 .footer-fondo p {
@@ -435,9 +502,28 @@ footer {
   font-weight: 200;
 }
 
+/* Fin Footer */
+@media (max-width: 480px) {
+  .formulario {
+    width: 100%;
+  }
+
+  footer {
+    padding-top: 0px;
+  }
+}
 /* Fin recetas */
 .capa-transparente {
   background: #7f9579;
+}
+
+.section-nutricion {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 1.5rem;
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */

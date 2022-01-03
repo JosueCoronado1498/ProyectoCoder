@@ -113,9 +113,9 @@ header {
     background-color: rgb(24, 17, 17);
     color:white;
     font-size: 20px;
-    padding: 1rem;
-    margin-inline: 600px;
-    text-decoration: none;
+    padding: 1.5rem;
+    margin-inline: auto;
+    text-decoration: underline;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -165,21 +165,25 @@ body {
 }
 
 .contenido-sobre-video {
-    z-index: 2;
-}
-
-.contenido-sobre-video h1 {
-    font-size: 30px;
-    color: white;
-    text-decoration: underline;
-    display: flex;
     justify-content: center;
+    align-items: center;
+    z-index: 2;
+    h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        color: white;
+        text-decoration: underline;
+        display: flex;
+        justify-content: center;
+    }
 }
 
-.contenido-sobre-video p {
+
+.parrafo-video {
     padding: 2rem 25rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 20px;
-    font-size: 20px;
+    font-size: 25px;
     color: white;
     display: flex;
     text-align: center;
