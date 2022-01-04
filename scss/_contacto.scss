@@ -1,0 +1,45 @@
+h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 25px auto;
+}
+
+.redes-sociales-contacto {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+        a {
+            text-decoration: none;
+            color: black;
+            letter-spacing: 55px;
+            i {
+                font-size: 35px;
+                transition: color .4s ease;
+
+                &:hover {
+                    color: yellowgreen;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+h3 {
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 15px 25px;
+}
+
+h4 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+ 
+iframe {
+    width: 100%;
+}
